@@ -3,7 +3,6 @@
 // S=1제곱, D=2제곱, T=3제곱 
 // *=점수2배&전점수2배, #=마이너스
 // *=첫번째인 경우, 첫번째 스타상 점수만 2배
-
 //
 const Bonus = {S:1, D:2, T:3};
 const Option = {'*':2, '#':-1};
@@ -28,4 +27,4 @@ function solution(dartResult) {
     //console.log(result);
     return result.reduce((acc,cur)=>acc+cur);
 }
-solution('1S2D*3T');
+console.log(solution('1S2D*3T'));
